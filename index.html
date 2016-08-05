@@ -1,0 +1,30 @@
+<html>
+  <title>CARTO DO Tagger</title>
+
+  <head>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBoQuDhQJQACJETu5AR_8yHWuovw9xihrc",
+        authDomain: "carto-do-tagger.firebaseapp.com",
+        databaseURL: "https://carto-do-tagger.firebaseio.com",
+        storageBucket: "",
+      };
+      firebase.initializeApp(config);
+    </script>
+
+  </head>
+
+  <body>
+
+    <input id="dataset_url" type="text" name="dataset_url" placeholder="CARTO table URL"/>
+
+    <div id="columns">
+
+    </div>
+
+    <script src="js/carto-do-tagger.js"></script>
+  </body>
+</html>
